@@ -111,18 +111,32 @@ class GlobalOverlay extends Component {
       position: 'absolute'
     };
 
+    let left = 0;
+    if(leftOverflow > 0) {
+      left = leftOverflow + 'px'
+    }
+    if(rightOverflow > 0) {
+      left = -rightOverflow + 'px';
+    }
+
+    let top = 0;
+    if(topOverflow > 0) {
+      top = topOverflow + 'px';
+    }
+    if(bottomOverflow > 0) {
+      top = -bottomOverflow + 'px';
+    }
+
     return (
       <div
         ref={ ref => (this._ref = ref)}
         className={className}
-        style={styles}
+        style={{ ...styles, ...style}}
       >
         <div style={{
           position: 'relative',
-          left: (rightOverflow > 0 ? -rightOverflow : 0) + 'px',
-          right: (leftOverflow > 0 ? -leftOverflow : 0) + 'px',
-          top: (bottomOverflow > 0 ? -bottomOverflow : 0) + 'px',
-          bottom: (topOverflow > 0 ? -topOverflow : 0) + 'px'
+          left: left,
+          top: top
         }}>
           {this.props.children}
         </div>

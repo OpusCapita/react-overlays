@@ -25,7 +25,7 @@ class GlobalOverlaySCOPE extends Component {
 
   render() {
     return (
-      <div ref={this.handleRef.bind(this)}>
+      <div>
         <Button
           isActive={this.state.isShow}
           label="Show"
@@ -34,6 +34,7 @@ class GlobalOverlaySCOPE extends Component {
           style={{ marginBottom: '12px' }}
         />
         <div
+          ref={this.handleRef.bind(this)}
           style={{
             padding: '72px 48px',
             border: '1px solid rgba(0, 0, 0, 0.12)',
