@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 
-// TODO Remove calculations from render. Add possibility to handle callbacks.
 export default
 class StickyNode extends Component {
   constructor(props) {
@@ -79,13 +78,7 @@ class StickyNode extends Component {
   }
 
   render() {
-    let {
-      className,
-      style,
-      onMaxWidth,
-      onMaxHeight,
-      restrictorNode
-    } = this.props;
+    let { className, style, restrictorNode } = this.props;
     let {
       rectWidth,
       rectHeight,
@@ -107,17 +100,11 @@ class StickyNode extends Component {
     let topOverflow = rectTop - refTop;
     let bottomOverflow = refBottom - rectBottom;
 
-    let maxWidth = 'none';
-    if(refWidth >= rectWidth) {
-      maxWidth = rectWidth + 'px';
-    }
-
-    let maxHeight = 'none';
-    if (refHeight >= rectHeight) {
-      maxHeight = rectHeight + 'px';
-    }
+    let maxWidth = (refWidth >= rectWidth) ? rectWidth + 'px' : 'none';
+    let maxHeight = (refHeight >= rectHeight) ? rectHeight + 'px' : 'none';
 
     let styles = {
+      display: display,
       maxWidth: maxWidth,
       maxHeight: maxHeight,
       position: 'absolute'
@@ -160,14 +147,11 @@ class StickyNode extends Component {
 StickyNode.propTypes = {
   className: PropTypes.string,
   restrictorNode: PropTypes.object,
-  // onMaxHeight: PropTypes.func, // TODO
-  // onMaxWidth: PropTypes.func, // TODO
   style: PropTypes.object
 };
 
 StickyNode.defaultProps = {
   restrictorNode: document.body,
-  style: {},
-  // onMaxHeight: () => {}, // TODO
-  // onMaxWidth: () => {} // TODO
+  style: {}
 };
+

@@ -3,7 +3,6 @@
 StickyNode is a React component which always will be inside a specified container.
 It can be usefull for a tooltips, etc. 
 
- - [react-sticky-node](https://github.com/visortelle/react-sticky-node) - <StickyNode /> - Simplest React sticky component with all directions support and minimal API.
 ### Code Example
 
 ```
@@ -20,7 +19,7 @@ It can be usefull for a tooltips, etc.
       whiteSpace: _scope.state.isNowrap ? 'nowrap' : 'normal'
     }}
   >
-    <div>Change parent 'left' and 'bottom' properties to see result. </div>
+    <div>Change parent 'left' and 'bottom' properties to see result.</div>
     <div>This div will never outside of 'Restrictor'</div>
   </div>
 </StickyNode>
@@ -35,6 +34,7 @@ It can be usefull for a tooltips, etc.
 | restrictorNode | object | Restrictor **DOMNode** or ReactElement **ref** |
 
 ### Contributors
+
 Kirill Volkovich
 
 [GIT REPOSITORY](http://buildserver.jcatalog.com/gitweb/?p=js-react-application-generator.git)
@@ -42,3 +42,7 @@ Kirill Volkovich
 ### Component Name
 
 StickyNode
+
+### License
+
+OpusCapita 2016
