@@ -1,4 +1,10 @@
 
+Release 1.0.3 Tue Nov 29 2016 17:49:58 GMT+0300 (Belarus Standard Time)
+=======================================================
+
+ - Improved shadow of SimpleModal. (volkovich <Kirill.Volkovich@jCatalog.com>, Tue Nov 29 17:49:47 2016 +0300)
+ - Updating to a version to  1.0.3 (volkovich <Kirill.Volkovich@jCatalog.com>, Tue Nov 29 17:41:25 2016 +0300)
+
 Release 1.0.2 Tue Nov 29 2016 17:41:10 GMT+0300 (Belarus Standard Time)
 =======================================================
 
