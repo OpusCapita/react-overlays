@@ -104,7 +104,6 @@ class StickyNode extends Component {
     let maxHeight = (refHeight >= rectHeight) ? rectHeight + 'px' : 'none';
 
     let styles = {
-      display: display,
       maxWidth: maxWidth,
       maxHeight: maxHeight,
       position: 'absolute'
