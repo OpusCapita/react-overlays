@@ -1,4 +1,10 @@
 
+Release 1.0.4 Thu Dec 15 2016 14:42:18 GMT+0300 (+03)
+=======================================================
+
+ - Moved most of dependencies '@opuscatapita/xxx' => 'opuscapita-xxx' (kirillvolkovich <kirill.volkovich@jcatalog.com>, Thu Dec 15 14:42:01 2016 +0300)
+ - Updating to a version to  1.0.4 (volkovich <Kirill.Volkovich@jCatalog.com>, Tue Nov 29 17:50:17 2016 +0300)
+
 Release 1.0.3 Tue Nov 29 2016 17:49:58 GMT+0300 (Belarus Standard Time)
 =======================================================
 
