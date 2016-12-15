@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { showroomScopeDecorator } from '@opuscapita/showroom-client';
+import { showroomScopeDecorator } from 'opuscapita-showroom-client';
 import Button from '@opuscapita/react-ui-buttons/lib/Button';
 
 @showroomScopeDecorator

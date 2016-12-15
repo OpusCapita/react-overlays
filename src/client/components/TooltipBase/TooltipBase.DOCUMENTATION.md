@@ -1,3 +1,7 @@
+### Component Name
+
+TooltipBase
+
 ### Synopsis
 
 TooltipBase is a simple
@@ -17,15 +21,3 @@ TooltipBase is a simple
 | label | string | Label text |
 | color | string | Text color |
 | bgColor | string | Background color |
-
-### Contributors
-Kirill Volkovich
-
-### Component Name
-
-TooltipBase
-
-### License
-
-Licensed by © 2016 OpusCapita
-

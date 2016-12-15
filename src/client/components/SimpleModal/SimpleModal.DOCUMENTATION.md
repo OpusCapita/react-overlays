@@ -1,7 +1,6 @@
-### Synopsis
+### Component Name
 
-SimpleModal is 
-*Write here a short introduction and/or overview that explains **what** component is.*
+SimpleModal
 
 ### Code Example
 
@@ -41,18 +40,3 @@ SimpleModal is
 | Name                          | Type                  | Description                                                |
 | ------------------------------|:----------------------| -----------------------------------------------------------|
 | demoProp | string | Write a description of the property |
-
-### Contributors
-
-Kirill Volkovich
-
-[GIT REPOSITORY](http://buildserver.jcatalog.com/gitweb/?p=js-react-application-generator.git)
-
-### Component Name
-
-SimpleModal
-
-### License
-
-Licensed by © 2016 OpusCapita
-

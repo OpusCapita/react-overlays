@@ -1,3 +1,7 @@
+### Component Name
+
+StickyNode
+
 ### Synopsis
 
 StickyNode is a React component which always will be inside a specified container.
@@ -32,17 +36,3 @@ It can be usefull for a tooltips, etc.
 | className | string | Default behaviour |
 | style | object | Default behaviour |
 | restrictorNode | object | Restrictor **DOMNode** or ReactElement **ref** |
-
-### Contributors
-
-Kirill Volkovich
-
-[GIT REPOSITORY](http://buildserver.jcatalog.com/gitweb/?p=js-react-application-generator.git)
-
-### Component Name
-
-StickyNode
-
-### License
-
-OpusCapita 2016
