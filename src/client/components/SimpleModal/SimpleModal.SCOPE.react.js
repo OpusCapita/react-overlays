@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { showroomScopeDecorator } from 'opuscapita-showroom-client';
-import Button from '@opuscapita/react-ui-buttons/lib/Button';
+import Button from 'opuscapita-react-ui-buttons/lib/Button';
 
 @showroomScopeDecorator
 class SimpleModalSCOPE extends Component {
@@ -9,7 +9,7 @@ class SimpleModalSCOPE extends Component {
     this.state = {
       isShowModal: false
     }
-  };
+  }
 
   handleToggleShowModal() {
     this.setState({ isShowModal: !this.state.isShowModal });

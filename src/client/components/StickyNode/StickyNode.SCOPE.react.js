@@ -1,6 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { showroomScopeDecorator } from 'opuscapita-showroom-client';
-import Button from '@opuscapita/react-ui-buttons/lib/Button';
 
 @showroomScopeDecorator
 class StickyNodeSCOPE extends Component {
@@ -11,10 +10,10 @@ class StickyNodeSCOPE extends Component {
       ref: null,
       isNowrap: true
     }
-  };
+  }
 
   handleRef(ref) {
-    if(!this.state.ref) {
+    if (!this.state.ref) {
       this.setState({ ref });
     }
   }

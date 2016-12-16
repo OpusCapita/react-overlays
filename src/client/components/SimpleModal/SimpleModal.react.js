@@ -13,18 +13,18 @@ class SimpleModal extends Component {
     let {
       isShow,
       onAnimationRest,
-      style,
+      style, // eslint-disable-line
       ...restProps
     } = this.props;
 
     let springPreset = presets.stiff;
     let motionDefaultStyle = {
-        x: isShow ? 0 : -100,
-        y: isShow ? 1 : 0
+      x: isShow ? 0 : -100,
+      y: isShow ? 1 : 0
     };
     let motionStyle = {
-        x: isShow ? spring(0, springPreset) : spring(-100, springPreset),
-        y: isShow ? spring(1, springPreset) : spring(0, springPreset)
+      x: isShow ? spring(0, springPreset) : spring(-100, springPreset),
+      y: isShow ? spring(1, springPreset) : spring(0, springPreset)
     };
 
     return (
