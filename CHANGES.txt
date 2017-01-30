@@ -1,4 +1,10 @@
 
+Release 1.0.7 Mon Jan 30 2017 11:48:23 GMT+0300 (+03)
+=======================================================
+
+ - Added index.js to 'ElementRectWatcher' (Kirill Volkovich <volkovich@scand.com>, Mon Jan 30 11:47:58 2017 +0300)
+ - Updating to a version to  1.0.7 (Kirill Volkovich <volkovich@scand.com>, Mon Jan 30 11:42:43 2017 +0300)
+
 Release 1.0.6 Mon Jan 30 2017 11:42:34 GMT+0300 (+03)
 =======================================================
 
