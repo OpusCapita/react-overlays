@@ -6,22 +6,24 @@ let host = require('./clientConfig').host;
 let port = require('./clientConfig').port;
 
 module.exports = {
-  entry: path.resolve(path.join(__dirname, 'www', 'index-page.js')),
+  entry: path.resolve(__dirname, './www/index-page.js'),
   context: path.resolve(__dirname),
   output: {
     publicPath: '/',
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, './lib'),
     filename: `index.js`,
     library: 'demopage',
     libraryTarget: 'umd'
   },
-  devtool: 'eval',
+  devtool: 'inline-source-map',
   watch: true,
   plugins: [
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.HOST': JSON.stringify(host),
-      'process.env.PORT': JSON.stringify(port)
+      'process.env.PORT': JSON.stringify(port),
+      // Uncomment next line if animation perf is bad
+      'process.env.NODE_ENV': '"production"'
     }),
   ],
   externals: {
@@ -39,49 +41,50 @@ module.exports = {
     }
   },
   resolve: {
-    root: path.join(__dirname, "node_modules"),
-    fallback: [path.join(__dirname, "node_modules")],
-    modulesDirectories: ['node_modules'],
-    extensions: ['', '.json', '.js']
-  },
-  resolveLoader: {
-    fallback: [path.join(__dirname, "node_modules")],
-    modulesDirectories: ['node_modules'],
-    moduleTemplates: ['*-loader', '*'],
-    extensions: ['', '.js']
-  },
-  postcss: function () {
-    return [require('autoprefixer')];
+    modules: ['node_modules'],
+    extensions: ['.json', '.js']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test   : /\.(png|jpg|jpeg|gif|ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-        loader : 'file-loader'
-      },
-      {
-        include: /\.json$/,
-        loader: 'json-loader'
+        use : ['file-loader']
       },
       {
         test: /\.md$/,
-        loader: 'raw-loader'
+        use: [{
+          loader: 'raw-loader'
+        }]
       },
       {
         test: /\.(css|less)$/,
-        loader: `style!css?modules&importLoaders=1&` +
-        `localIdentName=[name]__[local]__${packageVersion}_[hash:base64:3]` +
-        `!postcss-loader!less?sourceMap`,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              localIdentName: `[name]__[local]__${packageVersion}_[hash:base64:3]`,
+              modules: true
+            }
+          },
+          { loader: 'postcss-loader' },
+          { loader: 'less-loader', options: { sourceMap: true } }
+        ],
         include: /\.module\.(css|less)$/
       },
       {
         test: /\.(css|less)$/,
-        loader: `style!css!postcss-loader!less?sourceMap`,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' },
+          { loader: 'less-loader', options: { sourceMap: true } }
+        ],
         exclude: /\.module\.(css|less)$/
       },
       {
         test: /.jsx?$/,
-        loader: 'babel',
+        use: [{ loader: 'babel-loader' }],
         include: [
           path.join(__dirname, 'src'),
           path.join(__dirname, 'www')
