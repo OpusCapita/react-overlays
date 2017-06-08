@@ -1,4 +1,4 @@
-# React overlays ![badge-npm-version](https://img.shields.io/npm/v/@opuscapita/react-overlays.svg) ![badge-license](https://img.shields.io/github/license/OpusCapita/react-dates.svg)
+# React overlays ![badge-npm-version](https://img.shields.io/npm/v/@opuscapita/react-overlays.svg) ![badge-license](https://img.shields.io/github/license/OpusCapita/react-overlays.svg)
 
 ## Synopsis
 
