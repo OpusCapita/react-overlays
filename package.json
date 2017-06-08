@@ -16,6 +16,10 @@
     "lib",
     "README.md"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "license": "Apache-2.0",
   "repository": "OpusCapita/react-overlays",
   "peerDependencies": {
