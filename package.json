@@ -1,5 +1,5 @@
 {
-  "name": "opuscapita-react-ui-overlays",
+  "name": "@opuscapita/react-overlays",
   "version": "1.0.12",
   "description": "Start write new project with no effort.",
   "scripts": {
