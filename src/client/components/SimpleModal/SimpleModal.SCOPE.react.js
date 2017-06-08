@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { showroomScopeDecorator } from '@opuscapita/react-showroom-client';
-import Button from '@opuscapita/react-buttons/lib/Button';
 
 @showroomScopeDecorator
 class SimpleModalSCOPE extends Component {
@@ -19,13 +18,12 @@ class SimpleModalSCOPE extends Component {
     return (
       <div>
         <div style={{ marginBottom: '12px' }}>
-            <Button
-              bgColor="#e70"
-              color="#fff"
-              label="Toggle modal"
-              paper={true}
-              onClick={this.handleToggleShowModal.bind(this)}
-            />
+          <button
+            type="button"
+            onClick={this.handleToggleShowModal.bind(this)}
+          >
+            Toggle modal
+          </button>
         </div>
         <div>
           {this._renderChildren()}
