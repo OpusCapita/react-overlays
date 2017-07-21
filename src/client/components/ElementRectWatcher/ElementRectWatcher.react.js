@@ -25,7 +25,7 @@ class ElementRectWatcher extends Component {
   render() {
     let {
       children,
-      onChange,
+      onChange, // eslint-disable-line no-unused-vars
       ...restProps
     } = this.props;
 

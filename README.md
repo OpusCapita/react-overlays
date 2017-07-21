@@ -1,4 +1,9 @@
-# React overlays ![badge-npm-version](https://img.shields.io/npm/v/@opuscapita/react-overlays.svg) ![badge-license](https://img.shields.io/github/license/OpusCapita/react-overlays.svg)
+# React overlays 
+
+[![CircleCI Status](https://circleci.com/gh/OpusCapita/react-overlays/tree/master.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/OpusCapita/react-overlays)
+![badge-npm-version](https://img.shields.io/npm/v/@opuscapita/react-overlays.svg) 
+[![NPM Downloads](https://img.shields.io/npm/dm/@opuscapita/react-overlays.svg)](https://npmjs.org/package/@opuscapita/react-overlays)
+![badge-license](https://img.shields.io/github/license/OpusCapita/react-overlays.svg)
 
 ## Synopsis
 
