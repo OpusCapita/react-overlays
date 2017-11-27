@@ -1,6 +1,6 @@
 {
   "name": "@opuscapita/react-overlays",
-  "version": "1.0.15",
+  "version": "2.0.0",
   "description": "Start write new project with no effort.",
   "scripts": {
     "npm-build": "rimraf lib && webpack --config webpack.production.config.js",
