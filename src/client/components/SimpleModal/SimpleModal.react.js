@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import s from './SimpleModal.module.less';
 import { Motion, spring, presets } from 'react-motion';
 
