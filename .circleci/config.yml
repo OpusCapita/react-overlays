@@ -4,7 +4,8 @@ defaults: &defaults
   working_directory: ~/build
 
 version: 2.1
-  orbs:
+
+orbs:
   jira: circleci/jira@1.2.2
 
 jobs:
